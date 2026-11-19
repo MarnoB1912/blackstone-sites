@@ -216,7 +216,7 @@ footer img{height:56px;margin-bottom:14px}
 <div class="mbar"><a class="btn r" href="tel:0832705494">Call</a><a class="btn g" href="https://wa.me/27832705494">WhatsApp</a></div>
 <script>
 (function(){var g=document.querySelector('.gal');if(!g)return;var mq=window.matchMedia('(max-width:860px)'),paused=false,t,last=0,pos=0;
-function half(){return g.scrollWidth/2}
+function half(){var d=g.querySelector('.dup');return d?d.offsetLeft-g.children[0].offsetLeft:g.scrollWidth/2}
 function step(ts){if(mq.matches&&!paused){var dt=last?Math.min(ts-last,50):16;pos+=dt*0.035;if(pos>=half())pos-=half();g.scrollLeft=pos}last=ts;requestAnimationFrame(step)}
 function hold(){paused=true;clearTimeout(t)}function release(){clearTimeout(t);t=setTimeout(function(){pos=g.scrollLeft;paused=false},1800)}
 g.addEventListener('touchstart',hold,{passive:true});g.addEventListener('touchend',release);g.addEventListener('pointerdown',hold);g.addEventListener('pointerup',release);
