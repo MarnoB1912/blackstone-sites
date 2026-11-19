@@ -127,6 +127,9 @@ def main():
         p = json.loads(f.read_text())
         if p.get("skip"):
             continue
+        if p.get("custom"):
+            names[p["slug"]] = p["name"]
+            continue
         d = OUT / p["slug"]
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(render(p))
