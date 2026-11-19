@@ -89,7 +89,7 @@ def render(p):
     strip = [("star", f"{rating}/5" if rating else "Trusted", f"from {count} Google reviews" if count else "by local customers"),
              ("pin", p.get("town", "").split(",")[0], "local and owner-run"),
              ("chat", "WhatsApp", "quick replies and quotes"),
-             ("clock", p["hours"][0][1] if p.get("hours") else "Call today", "weekdays" if p.get("hours") else "for an appointment")]
+             ("clock", p["hours"][0][1] if p.get("hours") else "Call today", p["hours"][0][0] if p.get("hours") else "for an appointment")]
     strip_html = "".join(f"<div>{ic(i)}<span><b>{e(a)}</b><small>{e(b)}</small></span></div>" for i, a, b in strip)
     gscore = (f'<div class="gscore"><b>{e(rating)}</b><div><div class="stars">★★★★★</div><small>{e(count)} reviews on Google</small></div></div>' if rating else "")
     badge = (f'{ic("star")}<div><b>{e(rating)}</b><small>{e(count)} Google reviews</small></div>' if rating else f'{ic("shield")}<div><b>Local</b><small>owner-run</small></div>')
