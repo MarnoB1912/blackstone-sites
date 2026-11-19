@@ -79,7 +79,8 @@ h2{font-size:clamp(40px,5.4vw,68px);font-weight:800;margin:14px 0 16px}
 .gal div:hover img{transform:scale(1.04)}
 .gal .tall{grid-row:1/3}
 .gal span{position:absolute;left:14px;bottom:12px;font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;font-size:18px;letter-spacing:.04em;text-shadow:0 2px 12px rgba(0,0,0,.8)}
-@media(max-width:860px){.gal{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gal div{aspect-ratio:4/3}.gal .tall{grid-row:auto;aspect-ratio:3/4}}
+@media(max-width:860px){.gal{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -22px;padding:0 22px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.gal::-webkit-scrollbar{display:none}.gal div,.gal .tall{flex:0 0 78%;aspect-ratio:4/5;scroll-snap-align:center;grid-row:auto}.gal span{font-size:22px;left:16px;bottom:14px}.swipe{display:flex}}
+.swipe{display:none;align-items:center;gap:8px;color:var(--mute);font-size:13px;font-weight:600;margin-top:4px}
 /* about */
 .about{background:var(--bg2)}
 .split{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
@@ -159,6 +160,7 @@ footer img{height:56px;margin-bottom:14px}
 <div><img src="mat-shafts.jpg" alt="New drive shafts on the Seri Auto Service mat" loading="lazy" style="object-position:center 40%"><span>Quality parts</span></div>
 <div><img src="amg-front.jpg" alt="Mercedes-AMG GT" loading="lazy"><span>Every make, done right</span></div>
 </div>
+<div class="swipe">Swipe to see more →</div>
 </div></section>
 
 <section class="about"><div class="wrap split">
