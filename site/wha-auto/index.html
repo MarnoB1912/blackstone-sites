@@ -6,92 +6,183 @@
 <meta name="robots" content="noindex, nofollow">
 <title>WHA Auto | Car problems explained in plain language, then fixed</title>
 <meta name="description" content="Diagnostics, maintenance and repairs in Hennopspark, Centurion. We explain the problem in simple terms before we fix it.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<meta property="og:title" content="WHA Auto | Car problems explained in plain language, then fixed">
+<meta property="og:description" content="Diagnostics, maintenance and repairs in Hennopspark, Centurion. We explain the problem in simple terms before we fix it.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&amp;fit=crop&amp;q=70&amp;w=1200">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--a:#b91c1c;--ink:#111827;--mute:#6b7280;--bg:#f8fafc;--line:#e5e7eb}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
-a{color:inherit}
-.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-.pv{background:#0b0b0d;color:#e5e7eb;font-size:14px;padding:10px 0;position:sticky;top:0;z-index:50}
-.pv .wrap{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.pv b{color:#fff}.pv a.cta{background:#fff;color:#0b0b0d;text-decoration:none;font-weight:700;padding:6px 14px;border-radius:999px;white-space:nowrap}
-header.nav{border-bottom:1px solid var(--line);background:#fff}
-header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
-.logo{font-weight:800;font-size:20px;letter-spacing:-.02em}.logo span{color:var(--a)}
-.nav nav a{margin-left:22px;text-decoration:none;color:var(--mute);font-weight:500}
-.nav nav a:hover{color:var(--ink)}
-@media(max-width:700px){.nav nav{display:none}}
-.hero{background:linear-gradient(135deg,var(--a),#0b0b0d 130%);color:#fff;padding:80px 0 90px;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(255,255,255,.18),transparent 45%);pointer-events:none}
-.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.05;letter-spacing:-.03em;max-width:780px}
-.hero p{font-size:19px;opacity:.92;max-width:620px;margin:20px 0 30px}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;text-decoration:none}
-.btn.w{background:#fff;color:var(--ink)}.btn.g{background:#25D366;color:#fff}.btn.o{border:2px solid rgba(255,255,255,.6);color:#fff}
-.rating{margin-top:26px;font-size:15px;opacity:.95}.rating b{font-size:18px}
-section{padding:72px 0}
-.alt{background:var(--bg)}
-h2{font-size:clamp(26px,4vw,36px);letter-spacing:-.02em;margin-bottom:10px}
-.sub{color:var(--mute);margin-bottom:36px;max-width:640px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
-.card .icon{width:44px;height:44px;border-radius:12px;background:color-mix(in srgb,var(--a) 14%,#fff);display:grid;place-items:center;font-size:22px;margin-bottom:14px}
-.card h3{font-size:18px;margin-bottom:6px}.card p{color:var(--mute);font-size:15px}
-.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-.review{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
-.stars{color:#f59e0b;letter-spacing:2px;margin-bottom:8px}
-.review blockquote{font-size:16px}.review figcaption{color:var(--mute);margin-top:12px;font-size:14px;font-weight:600}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-@media(max-width:800px){.two{grid-template-columns:1fr}}
-.hours{list-style:none;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
-.hours li{display:flex;justify-content:space-between;padding:12px 18px;border-bottom:1px solid var(--line)}.hours li:last-child{border:0}
-iframe{width:100%;height:320px;border:0;border-radius:16px}
-.contact{background:#0b0b0d;color:#fff}
-.contact .sub{color:#9ca3af}
-form{display:grid;gap:12px;max-width:560px}
-input,textarea{width:100%;padding:14px;border-radius:10px;border:1px solid #333;background:#16161a;color:#fff;font:inherit}
-button{padding:14px;border:0;border-radius:10px;background:var(--a);color:#fff;font-weight:700;font:inherit;font-weight:700;cursor:pointer}
-footer{padding:28px 0;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
-.fab{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);text-decoration:none;font-size:28px;z-index:40}
+:root{--a:#b91c1c;--ai:#fff;--ink:#0f1115;--ink2:#3b4150;--mute:#6b7280;--bg:#f5f6f8;--line:#e6e8ec;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+/* preview bar */
+.pv{background:#0b0b0d;color:#cbd5e1;font-size:13px}
+.pv .wrap{display:flex;gap:10px;align-items:center;justify-content:space-between;min-height:42px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px}
+.pv b{color:#fff;font-weight:700}.pv .cta{background:#fff;color:#0b0b0d;font-weight:800;padding:6px 14px;border-radius:999px;white-space:nowrap}
+/* header */
+header.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;letter-spacing:-.01em}
+.mark{width:40px;height:40px;border-radius:11px;background:var(--a);color:var(--ai);display:grid;place-items:center;font-weight:800;font-size:15px;letter-spacing:.02em}
+.nav nav{display:flex;align-items:center;gap:28px;font-weight:600;color:var(--ink2);font-size:15px}
+.nav nav a:hover{color:var(--a)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:15px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.p{background:var(--a);color:var(--ai);box-shadow:0 8px 20px -8px var(--a)}
+.btn.wa{background:#25D366;color:#fff}
+.btn.gl{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
+.btn.sm{padding:10px 16px;font-size:14px}
+@media(max-width:860px){.nav nav a.l{display:none}}
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden;background:#111}
+.hero .bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&amp;fit=crop&amp;q=70&amp;w=1800') center/cover}
+.hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(8,9,12,.92) 0%,rgba(8,9,12,.78) 45%,rgba(8,9,12,.35) 100%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.25fr .85fr;gap:48px;align-items:center;padding-top:96px;padding-bottom:104px}
+@media(max-width:920px){.hero .wrap{grid-template-columns:1fr;padding-top:64px;padding-bottom:72px}.qcard{display:none}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.02em}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 4px rgba(52,211,153,.25)}
+.hero h1{font-size:clamp(36px,5.6vw,64px);line-height:1.04;letter-spacing:-.035em;font-weight:800;margin:22px 0 18px}
+.hero h1 em{font-style:normal;color:var(--a);filter:brightness(1.35) saturate(1.2)}
+.hero p.lead{font-size:clamp(17px,1.6vw,20px);color:#d6dae2;max-width:600px;margin-bottom:32px}
+.hero .btns{display:flex;gap:12px;flex-wrap:wrap}
+.proof{display:flex;gap:26px;flex-wrap:wrap;margin-top:38px;color:#e5e7eb;font-size:14px;font-weight:600}
+.proof span{display:flex;align-items:center;gap:8px}.stars{color:#fbbf24;letter-spacing:1px}
+.qcard{background:#fff;color:var(--ink);border-radius:22px;padding:28px;box-shadow:0 30px 60px -20px rgba(0,0,0,.5)}
+.qcard h3{font-size:21px;letter-spacing:-.01em}.qcard p{color:var(--mute);font-size:14px;margin:4px 0 18px}
+.f{display:grid;gap:10px}.f input,.f select,.f textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:11px;font:inherit;font-size:15px;background:#fafbfc}
+.f input:focus,.f textarea:focus{outline:2px solid var(--a);border-color:transparent;background:#fff}
+.f button{border:0;cursor:pointer}
+/* strip */
+.strip{background:var(--ink);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.strip div{padding:26px 18px;border-right:1px solid rgba(255,255,255,.08);display:flex;gap:14px;align-items:center}
+.strip div:last-child{border:0}.strip b{display:block;font-size:20px;letter-spacing:-.01em}.strip small{color:#9aa3b2;font-size:13px}
+.strip svg.i{color:var(--a);filter:brightness(1.4);width:28px;height:28px}
+@media(max-width:860px){.strip .wrap{grid-template-columns:1fr 1fr}.strip div:nth-child(2){border:0}}
+/* sections */
+section{padding:96px 0}.alt{background:var(--bg)}
+.kicker{color:var(--a);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+h2{font-size:clamp(28px,3.6vw,44px);letter-spacing:-.03em;line-height:1.1;margin:10px 0 14px;font-weight:800}
+.sub{color:var(--mute);font-size:17px;max-width:620px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:1000px){.svc{grid-template-columns:1fr 1fr}}@media(max-width:560px){.svc{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;transition:.2s}
+.card:hover{border-color:transparent;box-shadow:0 20px 40px -18px rgba(15,17,21,.25);transform:translateY(-3px)}
+.ic{width:52px;height:52px;border-radius:14px;background:color-mix(in srgb,var(--a) 12%,#fff);color:var(--a);display:grid;place-items:center;margin-bottom:18px}
+.ic svg.i{width:26px;height:26px}
+.card h3{font-size:18px;margin-bottom:6px;letter-spacing:-.01em}.card p{color:var(--mute);font-size:15px}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+@media(max-width:900px){.split{grid-template-columns:1fr;gap:36px}}
+.photo{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/3.4;background:#ddd}
+.photo img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:20px;bottom:20px;background:#fff;border-radius:16px;padding:14px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 12px 30px -10px rgba(0,0,0,.35)}
+.badge b{font-size:24px;line-height:1}.badge small{color:var(--mute);font-size:12px;display:block}
+.steps{display:grid;gap:22px;margin-top:30px}
+.step{display:flex;gap:18px}.num{width:44px;height:44px;flex:none;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:800}
+.step h4{font-size:17px}.step p{color:var(--mute);font-size:15px}
+/* reviews */
+.rv{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:16px}
+.review blockquote{font-size:16.5px;color:var(--ink2)}.who{display:flex;align-items:center;gap:12px;margin-top:auto}
+.av{width:40px;height:40px;border-radius:50%;background:color-mix(in srgb,var(--a) 18%,#fff);color:var(--a);display:grid;place-items:center;font-weight:800}
+.who b{font-size:15px}.who small{display:block;color:var(--mute);font-size:12.5px}
+.gscore{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 20px}
+.gscore b{font-size:32px;letter-spacing:-.02em}
+/* gallery */
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px;height:340px}
+.gal div{border-radius:18px;overflow:hidden;background:#ddd}.gal img{width:100%;height:100%;object-fit:cover}
+@media(max-width:760px){.gal{grid-template-columns:1fr 1fr;height:auto}.gal div{aspect-ratio:1}.gal div:first-child{grid-column:1/3;aspect-ratio:16/9}}
+/* find */
+.info{display:grid;gap:14px}
+.row{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.row svg.i{color:var(--a);margin-top:2px}.row b{display:block;font-size:15px}.row span{color:var(--mute);font-size:15px}
+.hours{list-style:none;font-size:15px;color:var(--ink2);margin-top:4px}.hours li{display:flex;justify-content:space-between;gap:20px}
+.map{border-radius:22px;overflow:hidden;min-height:400px;border:1px solid var(--line)}.map iframe{width:100%;height:100%;min-height:400px;border:0}
+/* cta */
+.cta{background:var(--a);color:var(--ai);border-radius:28px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden}
+.cta:after{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.08)}
+.cta h2{margin:0;color:var(--ai)}.cta p{opacity:.9;margin-top:8px}.cta .btns{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:1}
+.btn.wh{background:#fff;color:var(--ink)}
+footer{background:var(--ink);color:#9aa3b2;padding:56px 0 30px;margin-top:96px;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}@media(max-width:760px){footer .wrap{grid-template-columns:1fr}}
+footer h5{color:#fff;font-size:14px;margin-bottom:10px}footer .brand{color:#fff;margin-bottom:12px}
+.copy{border-top:1px solid rgba(255,255,255,.08);margin-top:36px;padding-top:20px;grid-column:1/-1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.fab{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.25);z-index:50}
+.fab svg{width:30px;height:30px;fill:#fff}
+.mobile-bar{display:none}
+@media(max-width:640px){.mobile-bar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;padding:10px;background:#fff;border-top:1px solid var(--line);z-index:50}.fab{display:none}body{padding-bottom:72px}}
 </style>
 </head>
 <body>
-<div class="pv"><div class="wrap"><span><b>Preview</b> made for WHA Auto by Blackstone Tech. This site is not live yet.</span><a class="cta" href="/claim/?b=wha-auto">Make it yours: R2,500 once-off</a></div></div>
+<div class="pv"><div class="wrap"><span><b>Preview</b> built for WHA Auto by Blackstone Tech. Not live yet.</span><a class="cta" href="/claim/?b=wha-auto">Make it yours: R2,500 once-off →</a></div></div>
 
-<header class="nav"><div class="wrap"><div class="logo">WHA Auto</div><nav><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#find">Find us</a><a href="#contact">Contact</a></nav></div></header>
+<header class="nav"><div class="wrap">
+<a class="brand" href="#"><span class="mark">WA</span>WHA Auto</a>
+<nav><a class="l" href="#services">Services</a><a class="l" href="#reviews">Reviews</a><a class="l" href="#find">Contact</a><a class="btn p sm" href="tel:0781894494"><svg class="i" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> 078 189 4494</a></nav>
+</div></header>
 
-<div class="hero"><div class="wrap">
-<h1>Car problems explained in plain language, then fixed</h1>
-<p>Diagnostics, maintenance and repairs in Hennopspark, Centurion. We explain the problem in simple terms before we fix it.</p>
-<div class="btns"><a class="btn w" href="tel:0781894494">📞 Call 078 189 4494</a><a class="btn g" href="https://wa.me/27781894494?text=Hi%20WHA%20Auto%2C%20I%20found%20you%20online%20and%20would%20like%20a%20quote.">💬 WhatsApp us</a><a class="btn o" href="#contact">Get a quote</a></div>
-<div class="rating"><b>4.6★</b> from 84 Google reviews</div>
+<div class="hero"><div class="bg"></div><div class="wrap">
+<div>
+<span class="eyebrow"><span class="dot"></span>Hennopspark · serving Centurion, Irene</span>
+<h1>Car problems explained in plain language, <em>then fixed</em></h1>
+<p class="lead">Diagnostics, maintenance and repairs in Hennopspark, Centurion. We explain the problem in simple terms before we fix it.</p>
+<div class="btns"><a class="btn p" href="tel:0781894494"><svg class="i" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call now</a><a class="btn wa" href="https://wa.me/27781894494?text=Hi%20WHA%20Auto%2C%20I%20found%20you%20online%20and%20would%20like%20a%20quote."><svg class="i" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg> WhatsApp us</a></div>
+<div class="proof"><span><span class="stars">★★★★★</span> 4.6 on Google</span><span><svg class="i" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg> 84 reviews</span><span><svg class="i" viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="m9 12 2 2 4-4"/></svg> Workmanship you can trust</span></div>
+</div>
+<div class="qcard"><h3>Get a free quote</h3><p>Tell us what's wrong and we'll get back to you quickly.</p>
+<form class="f" onsubmit="event.preventDefault();this.innerHTML='<p style=&quot;padding:20px 0&quot;>Thanks! On the live site this goes straight to WHA Auto.</p>'">
+<input placeholder="Your name" required><input placeholder="Phone number" required><textarea rows="3" placeholder="What&#x27;s the problem? Vehicle make and model?"></textarea><button class="btn p">Request quote</button></form></div>
 </div></div>
 
+<div class="strip"><div class="wrap"><div><svg class="i" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><span><b>4.6/5</b><small>from 84 Google reviews</small></span></div><div><svg class="i" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span><b>Hennopspark</b><small>local and owner-run</small></span></div><div><svg class="i" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg><span><b>WhatsApp</b><small>quick replies and quotes</small></span></div><div><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span><b>Call today</b><small>for an appointment</small></span></div></div></div>
+
 <section id="services"><div class="wrap">
-<h2>What we do</h2><p class="sub">Serving Hennopspark, Centurion, Irene, Lyttelton, Highveld.</p>
-<div class="grid"><div class="card"><div class="icon">🖥️</div><h3>In-depth diagnostics</h3><p>We get to the bottom of the problem and explain it clearly.</p></div><div class="card"><div class="icon">🔧</div><h3>Maintenance &amp; services</h3><p>Reliable scheduled maintenance on all makes.</p></div><div class="card"><div class="icon">⚙️</div><h3>Repairs</h3><p>Engine, suspension and general repairs.</p></div><div class="card"><div class="icon">📅</div><h3>Easy bookings</h3><p>A dedicated team to book your car in.</p></div></div>
+<div class="head"><div><div class="kicker">What we do</div><h2>Services we offer</h2><p class="sub">Honest work, clear quotes and proper workmanship, for customers across Hennopspark, Centurion, Irene, Lyttelton, Highveld.</p></div><a class="btn p" href="https://wa.me/27781894494?text=Hi%20WHA%20Auto%2C%20I%20found%20you%20online%20and%20would%20like%20a%20quote."><svg class="i" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg> Ask a question</a></div>
+<div class="svc"><div class="card"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 14l4-4M3.3 17a10 10 0 1 1 17.4 0"/><circle cx="12" cy="14" r="1"/></svg></div><h3>In-depth diagnostics</h3><p>We get to the bottom of the problem and explain it clearly.</p></div><div class="card"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div><h3>Maintenance &amp; services</h3><p>Reliable scheduled maintenance on all makes.</p></div><div class="card"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M3 21l6-6M14 4l6 6-9 9-6-6z"/></svg></div><h3>Repairs</h3><p>Engine, suspension and general repairs.</p></div><div class="card"><div class="ic"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div><h3>Easy bookings</h3><p>A dedicated team to book your car in.</p></div></div>
 </div></section>
 
-<section id="reviews" class="alt" style=""><div class="wrap">
-<h2>What customers say</h2><p class="sub">Real reviews from Google.</p>
-<div class="reviews"><figure class="review"><div class="stars">★★★★★</div><blockquote>I had a problem with my Nissan xtrail and i took it to WHA workshop in Hennopspark, the worked on it and did an amazing job.</blockquote><figcaption>— Thabo K.</figcaption></figure></div>
+<section class="alt"><div class="wrap split">
+<div class="photo"><img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&amp;fit=crop&amp;q=70&amp;w=1100" alt="" loading="lazy"><div class="badge"><svg class="i" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><div><b>4.6</b><small>84 Google reviews</small></div></div></div>
+<div><div class="kicker">How it works</div><h2>Fixed properly the first time, with no surprises.</h2>
+<div class="steps">
+<div class="step"><div class="num">1</div><div><h4>Call or WhatsApp us</h4><p>Tell us what's going on. We'll give you a straight answer on what it could be.</p></div></div>
+<div class="step"><div class="num">2</div><div><h4>We diagnose and quote</h4><p>We find the real problem and explain it in plain language before any work starts.</p></div></div>
+<div class="step"><div class="num">3</div><div><h4>Job done</h4><p>Quality work at a fair price, and we stand behind it.</p></div></div>
+</div></div>
 </div></section>
 
-<section id="find"><div class="wrap two">
-<div><h2>Find us</h2><p class="sub">5 Marconi Nook, Hennopspark, Centurion, 0157</p><ul class="hours" style="display:none"></ul></div>
-<iframe loading="lazy" src="https://maps.google.com/maps?q=WHA%20Auto%2C%205%20Marconi%20Nook%2C%20Hennopspark%2C%20Centurion&output=embed" title="Map"></iframe>
+<section id="reviews" style=""><div class="wrap">
+<div class="head"><div><div class="kicker">Reviews</div><h2>Our customers say it best.</h2></div><div class="gscore"><b>4.6</b><div><div class="stars">★★★★★</div><small>84 reviews on Google</small></div></div></div>
+<div class="rv"><figure class="review"><div class="stars">★★★★★</div><blockquote>“I had a problem with my Nissan xtrail and i took it to WHA workshop in Hennopspark, the worked on it and did an amazing job.”</blockquote><div class="who"><div class="av">T</div><div><b>Thabo K.</b><small>Google review</small></div></div></figure></div>
 </div></section>
 
-<section id="contact" class="contact"><div class="wrap">
-<h2>Request a quote</h2><p class="sub">Send us the details and we'll get back to you, or call 078 189 4494.</p>
-<form onsubmit="event.preventDefault();this.innerHTML='<p>Thanks! (Preview only: on the live site this goes straight to WHA Auto\'s inbox.)</p>'">
-<input placeholder="Your name" required><input placeholder="Phone or email" required><textarea rows="4" placeholder="What do you need?"></textarea><button>Send request</button>
-</form>
+<section class="alt" style="padding:0 0 0"><div class="wrap"><div class="gal"><div><img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&amp;fit=crop&amp;q=70&amp;w=1000" alt="" loading="lazy"></div><div><img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&amp;fit=crop&amp;q=70&amp;w=600" alt="" loading="lazy"></div><div><img src="https://images.unsplash.com/photo-1552656967-7a0991a13906?auto=format&amp;fit=crop&amp;q=70&amp;w=600" alt="" loading="lazy"></div></div></div></section>
+
+<section id="find"><div class="wrap split" style="align-items:stretch">
+<div><div class="kicker">Find us</div><h2>Visit, call or WhatsApp.</h2>
+<div class="info" style="margin-top:26px">
+<div class="row"><svg class="i" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><b>Address</b><span>5 Marconi Nook, Hennopspark, Centurion, 0157</span></div></div>
+<div class="row"><svg class="i" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><b>Phone & WhatsApp</b><span><a href="tel:0781894494">078 189 4494</a></span></div></div>
+<div class="row" style="display:none"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div style="flex:1"><b>Hours</b><ul class="hours"></ul></div></div>
+<div class="row"><svg class="i" viewBox="0 0 24 24"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4z"/><path d="M8 2v16M16 6v16"/></svg><div><b>Areas we serve</b><span>Hennopspark, Centurion, Irene, Lyttelton, Highveld</span></div></div>
+</div></div>
+<div class="map"><iframe loading="lazy" src="https://maps.google.com/maps?q=WHA%20Auto%2C%205%20Marconi%20Nook%2C%20Hennopspark%2C%20Centurion&output=embed" title="Map"></iframe></div>
 </div></section>
 
-<footer><div class="wrap">© 2026 WHA Auto · Hennopspark, Centurion</div></footer>
-<a class="fab" href="https://wa.me/27781894494?text=Hi%20WHA%20Auto%2C%20I%20found%20you%20online%20and%20would%20like%20a%20quote." aria-label="WhatsApp">💬</a>
+<div class="wrap"><div class="cta"><div><h2>Need help today?</h2><p>Call or WhatsApp WHA Auto now for a quick answer and a fair quote.</p></div><div class="btns"><a class="btn wh" href="tel:0781894494"><svg class="i" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> 078 189 4494</a><a class="btn wa" href="https://wa.me/27781894494?text=Hi%20WHA%20Auto%2C%20I%20found%20you%20online%20and%20would%20like%20a%20quote."><svg class="i" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg> WhatsApp</a></div></div></div>
+
+<footer><div class="wrap">
+<div><div class="brand"><span class="mark">WA</span>WHA Auto</div><p>Diagnostics, maintenance and repairs in Hennopspark, Centurion. We explain the problem in simple terms before we fix it.</p></div>
+<div><h5>Contact</h5><p>078 189 4494<br>5 Marconi Nook, Hennopspark, Centurion, 0157</p></div>
+<div><h5>Areas</h5><p>Hennopspark, Centurion, Irene, Lyttelton, Highveld</p></div>
+<div class="copy"><span>© 2026 WHA Auto</span><span>Website by Blackstone Tech</span></div>
+</div></footer>
+<a class="fab" href="https://wa.me/27781894494?text=Hi%20WHA%20Auto%2C%20I%20found%20you%20online%20and%20would%20like%20a%20quote." aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm0-21.6A11.8 11.8 0 0 0 1.9 18L.2 24l6.2-1.6A11.8 11.8 0 1 0 12 .2z"/></svg></a>
+<div class="mobile-bar"><a class="btn p" href="tel:0781894494"><svg class="i" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg> Call</a><a class="btn wa" href="https://wa.me/27781894494?text=Hi%20WHA%20Auto%2C%20I%20found%20you%20online%20and%20would%20like%20a%20quote."><svg class="i" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg> WhatsApp</a></div>
 </body>
 </html>
