@@ -43,6 +43,6 @@ ol{margin:12px 0 0 20px}ol li{padding:6px 0}ol li:before{content:none}
 <script>
 const b=new URLSearchParams(location.search).get('b')||'';const names=window.NAMES||{};
 if(names[b])document.getElementById('biz').textContent=names[b]+"'s preview";
-const PAY=window.PAY_LINK||"";if(PAY){document.getElementById('pay').href=PAY+(PAY.includes('?')?'&':'?')+'custom_str1='+encodeURIComponent(b);}
+const PAY=window.PAY_LINK||"";if(PAY){document.getElementById('pay').href=PAY;}
 </script>
 </div></body></html>
