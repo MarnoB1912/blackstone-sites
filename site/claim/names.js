@@ -1,1 +1,1 @@
-window.NAMES={"roelfs-auto-electrical": "Roelf's Auto Electrical", "pretoria-motor-works": "Pretoria Motor Works", "manuel-auto-mech": "Manuel Auto Mech"};
+window.NAMES={"roelfs-auto-electrical": "Roelf's Auto Electrical", "royal-car-auto-fix": "Royal Car Auto Fix", "elarduspark-plumbing": "Elarduspark Plumbing", "pretoria-motor-works": "Pretoria Motor Works", "manuel-auto-mech": "Manuel Auto Mech"};
