@@ -1,0 +1,1 @@
+window.NAMES={"roelfs-auto-electrical": "Roelf's Auto Electrical", "pretoria-motor-works": "Pretoria Motor Works", "manuel-auto-mech": "Manuel Auto Mech"};

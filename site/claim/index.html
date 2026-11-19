@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>Make your website live | Blackstone Tech</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#08080A;color:#e5e7eb;line-height:1.6}
+.w{max-width:760px;margin:0 auto;padding:48px 20px}.brand{font-weight:800;letter-spacing:.2em;color:#fff;font-size:14px}
+h1{color:#fff;font-size:clamp(30px,5vw,44px);line-height:1.1;letter-spacing:-.02em;margin:28px 0 14px}
+.lead{color:#9ca3af;font-size:18px}.box{background:#121216;border:1px solid #26262c;border-radius:18px;padding:28px;margin:28px 0}
+.price{font-size:44px;font-weight:800;color:#fff}.price small{font-size:16px;color:#9ca3af;font-weight:600}
+ul{list-style:none;margin:18px 0}li{padding:8px 0 8px 28px;position:relative}li:before{content:"✓";position:absolute;left:0;color:#34d399;font-weight:800}
+ol{margin:12px 0 0 20px}ol li{padding:6px 0}ol li:before{content:none}
+.pay{display:block;text-align:center;background:#fff;color:#08080A;font-weight:800;padding:16px;border-radius:12px;text-decoration:none;font-size:18px;margin-top:18px}
+.alt{display:block;text-align:center;color:#e5e7eb;margin-top:12px}
+.small{font-size:14px;color:#9ca3af}a{color:#fff}
+</style></head>
+<body><div class="w">
+<div class="brand">BLACKSTONE TECH</div>
+<h1>Make <span id="biz">your preview</span> your real website.</h1>
+<p class="lead">You've seen the preview. Pay once, and we make it live on your own web address within 48 hours.</p>
+<div class="box">
+<div class="price">R2,500 <small>once-off · no monthly fees</small></div>
+<ul>
+<li>Your own .co.za web address (first year included)</li>
+<li>Hosting included, with no monthly fee</li>
+<li>Two rounds of changes: services, photos, wording, colours</li>
+<li>Quote form that sends straight to your email, plus WhatsApp and call buttons</li>
+<li>Linked to your Google Maps listing so customers find it</li>
+<li>Live within 48 hours of payment and your go-ahead on the content</li>
+</ul>
+<a class="pay" id="pay" href="https://wa.me/?text=">Pay R2,500 securely with PayFast</a>
+<a class="alt" href="mailto:admin@blackstone-tech.co.za?subject=Website%20preview">Questions first? Email admin@blackstone-tech.co.za</a>
+</div>
+<div class="box"><b style="color:#fff">How it works</b>
+<ol><li>Pay through PayFast (card, Instant EFT, SnapScan and more).</li><li>Tell us what to change and send any photos you'd like used.</li><li>We register your web address and make the site live, normally within 48 hours.</li></ol>
+<p class="small" style="margin-top:14px">Not happy with the finished site before it goes live? You get a full refund.</p></div>
+<p class="small">Blackstone Tech is a South African software studio (<a href="https://www.blackstone-tech.co.za">blackstone-tech.co.za</a>). Our sites are built with AI and checked by our team before they go live.</p>
+</div>
+<script src="names.js"></script>
+<script src="pay.js"></script>
+<script>
+const b=new URLSearchParams(location.search).get('b')||'';const names=window.NAMES||{};
+if(names[b])document.getElementById('biz').textContent=names[b]+"'s preview";
+const PAY=window.PAY_LINK||"";if(PAY){document.getElementById('pay').href=PAY+(PAY.includes('?')?'&':'?')+'custom_str1='+encodeURIComponent(b);}
+</script>
+</div></body></html>

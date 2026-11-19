@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>{{NAME}} | {{TAGLINE}}</title>
+<meta name="description" content="{{INTRO}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--a:{{ACCENT}};--ink:#111827;--mute:#6b7280;--bg:#f8fafc;--line:#e5e7eb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.pv{background:#0b0b0d;color:#e5e7eb;font-size:14px;padding:10px 0;position:sticky;top:0;z-index:50}
+.pv .wrap{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.pv b{color:#fff}.pv a.cta{background:#fff;color:#0b0b0d;text-decoration:none;font-weight:700;padding:6px 14px;border-radius:999px;white-space:nowrap}
+header.nav{border-bottom:1px solid var(--line);background:#fff}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.02em}.logo span{color:var(--a)}
+.nav nav a{margin-left:22px;text-decoration:none;color:var(--mute);font-weight:500}
+.nav nav a:hover{color:var(--ink)}
+@media(max-width:700px){.nav nav{display:none}}
+.hero{background:linear-gradient(135deg,var(--a),#0b0b0d 130%);color:#fff;padding:80px 0 90px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(255,255,255,.18),transparent 45%);pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.05;letter-spacing:-.03em;max-width:780px}
+.hero p{font-size:19px;opacity:.92;max-width:620px;margin:20px 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;text-decoration:none}
+.btn.w{background:#fff;color:var(--ink)}.btn.g{background:#25D366;color:#fff}.btn.o{border:2px solid rgba(255,255,255,.6);color:#fff}
+.rating{margin-top:26px;font-size:15px;opacity:.95}.rating b{font-size:18px}
+section{padding:72px 0}
+.alt{background:var(--bg)}
+h2{font-size:clamp(26px,4vw,36px);letter-spacing:-.02em;margin-bottom:10px}
+.sub{color:var(--mute);margin-bottom:36px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.card .icon{width:44px;height:44px;border-radius:12px;background:color-mix(in srgb,var(--a) 14%,#fff);display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+.card h3{font-size:18px;margin-bottom:6px}.card p{color:var(--mute);font-size:15px}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.review{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.stars{color:#f59e0b;letter-spacing:2px;margin-bottom:8px}
+.review blockquote{font-size:16px}.review figcaption{color:var(--mute);margin-top:12px;font-size:14px;font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+.hours{list-style:none;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.hours li{display:flex;justify-content:space-between;padding:12px 18px;border-bottom:1px solid var(--line)}.hours li:last-child{border:0}
+iframe{width:100%;height:320px;border:0;border-radius:16px}
+.contact{background:#0b0b0d;color:#fff}
+.contact .sub{color:#9ca3af}
+form{display:grid;gap:12px;max-width:560px}
+input,textarea{width:100%;padding:14px;border-radius:10px;border:1px solid #333;background:#16161a;color:#fff;font:inherit}
+button{padding:14px;border:0;border-radius:10px;background:var(--a);color:#fff;font-weight:700;font:inherit;font-weight:700;cursor:pointer}
+footer{padding:28px 0;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+.fab{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);text-decoration:none;font-size:28px;z-index:40}
+</style>
+</head>
+<body>
+<div class="pv"><div class="wrap"><span><b>Preview</b> made for {{NAME}} by Blackstone Tech. This site is not live yet.</span><a class="cta" href="/claim/?b={{SLUG}}">Make it yours: {{PRICE}} once-off</a></div></div>
+
+<header class="nav"><div class="wrap"><div class="logo">{{NAME}}</div><nav><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#find">Find us</a><a href="#contact">Contact</a></nav></div></header>
+
+<div class="hero"><div class="wrap">
+<h1>{{TAGLINE}}</h1>
+<p>{{INTRO}}</p>
+<div class="btns"><a class="btn w" href="tel:{{TEL}}">📞 Call {{PHONE}}</a><a class="btn g" href="{{WA}}">💬 WhatsApp us</a><a class="btn o" href="#contact">Get a quote</a></div>
+{{RATING}}
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2>What we do</h2><p class="sub">Serving {{AREAS}}.</p>
+<div class="grid">{{SERVICES}}</div>
+</div></section>
+
+<section id="reviews" class="alt" style="{{REVIEWS_STYLE}}"><div class="wrap">
+<h2>What customers say</h2><p class="sub">Real reviews from Google.</p>
+<div class="reviews">{{REVIEWS}}</div>
+</div></section>
+
+<section id="find"><div class="wrap two">
+<div><h2>Find us</h2><p class="sub">{{ADDRESS}}</p><ul class="hours" style="{{HOURS_STYLE}}">{{HOURS}}</ul></div>
+<iframe loading="lazy" src="https://maps.google.com/maps?q={{MAP_Q}}&output=embed" title="Map"></iframe>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Request a quote</h2><p class="sub">Send us the details and we'll get back to you, or call {{PHONE}}.</p>
+<form onsubmit="event.preventDefault();this.innerHTML='<p>Thanks! (Preview only: on the live site this goes straight to {{NAME}}\'s inbox.)</p>'">
+<input placeholder="Your name" required><input placeholder="Phone or email" required><textarea rows="4" placeholder="What do you need?"></textarea><button>Send request</button>
+</form>
+</div></section>
+
+<footer><div class="wrap">© {{YEAR}} {{NAME}} · {{TOWN}}</div></footer>
+<a class="fab" href="{{WA}}" aria-label="WhatsApp">💬</a>
+</body>
+</html>
