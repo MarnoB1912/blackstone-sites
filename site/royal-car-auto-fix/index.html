@@ -30,7 +30,7 @@ section{padding:92px 0}
 .pv{background:var(--y);color:#0a0f35;font-size:14px;position:relative;z-index:60}.pv .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 22px}.pv .cta{background:#0a0f35;color:#fff;padding:6px 14px;border-radius:999px;font-weight:700;white-space:nowrap}
 header{position:sticky;top:0;z-index:50;background:rgba(10,15,53,.88);backdrop-filter:blur(12px);border-bottom:1px solid #1b2360}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
-header .logo{height:50px;width:auto}
+header .logo{height:58px;width:auto}
 nav{display:flex;gap:26px;font-weight:600;font-size:14px;color:#cfd3ef}nav a:hover{color:var(--y)}
 header .btn{padding:11px 18px;font-size:14px}
 @media(max-width:900px){nav{display:none}header .logo{height:42px}header .btn span{display:none}}
@@ -56,7 +56,7 @@ header .btn{padding:11px 18px;font-size:14px}
 .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
 .stat{padding:26px 10px;text-align:center;border-right:1px solid #1b2360}.stat:last-child{border:0}
 .stat b{display:block;font:900 34px/1 Montserrat;color:#fff}.stat b i{color:var(--y);font-style:normal}
-.stat span{color:var(--mute);font-size:13px;text-transform:uppercase;letter-spacing:.1em}
+.stat b span{font:inherit;color:inherit;letter-spacing:0;text-transform:none}.stat>span{color:var(--mute);font-size:13px;text-transform:uppercase;letter-spacing:.1em}
 @media(max-width:700px){.stats .wrap{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid #1b2360}}
 .marq{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.marq span{border:1px solid #2a3480;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;color:#cfd3ef}
 .svc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
@@ -147,7 +147,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 <div class="stat"><b><span data-c="5.0">5.0</span><i>★</i></b><span>Google rating</span></div>
 <div class="stat"><b>24/7</b><span>Always open</span></div>
 <div class="stat"><b><span data-c="5">5</span>+</b><span>Years experience</span></div>
-<div class="stat"><b>We<i>come</i></b><span>to you</span></div>
+<div class="stat"><b>We <i>come</i></b><span>to you</span></div>
 </div></div>
 
 <section id="services"><div class="wrap">
