@@ -5,6 +5,7 @@ import json, html, pathlib, urllib.parse, re
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "site"
 TEMPLATE = (ROOT / "template.html").read_text()
+BOOKING = (ROOT / "booking.html").read_text()
 PRICE = "R2,500"
 U = "https://images.unsplash.com/photo-"
 Q = "?auto=format&fit=crop&q=70"
@@ -112,7 +113,15 @@ def render(p):
         "FORM_HINT": e(p.get("form_hint") or "What's the problem? Vehicle make and model?"),
         "I_PHONE": ic("phone"), "I_WA": ic("chat"), "I_PIN": ic("pin"), "I_CLOCK": ic("clock"), "I_MAP": ic("map"), "WA_SVG": WA_SVG,
     }
-    out = TEMPLATE
+    bk = p.get("booking", {})
+    bk_html = BOOKING
+    bsubs = {"BK_SERVICES": "".join(f'<button type="button" class="chip">{e(s["name"])}</button>' for s in p["services"]) + '<button type="button" class="chip">Something else</button>',
+             "BK_PHONE": wa.split("wa.me/")[1].split("?")[0], "BK_NAME_JS": p["name"].replace('"', "").replace("\\", ""),
+             "BK_DAYS": json.dumps(bk.get("days", [1, 2, 3, 4, 5])), "BK_OPEN": bk.get("open", "08:00"), "BK_CLOSE": bk.get("close", "17:00"),
+             "BK_STEP": str(bk.get("step", 60)), "BK_EXTRA": e(p.get("form_hint") or "Vehicle make and model? Anything we should know?")}
+    for k, v in bsubs.items():
+        bk_html = bk_html.replace("{{" + k + "}}", v)
+    out = TEMPLATE.replace('<section id="find">', bk_html + '\n<section id="find">', 1).replace('<a class="l" href="#find">Contact</a>', '<a class="l" href="#book">Book online</a><a class="l" href="#find">Contact</a>')
     for k, v in subs.items():
         out = out.replace("{{" + k + "}}", v)
     left = re.findall(r"{{\w+}}", out)
