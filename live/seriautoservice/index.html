@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://www.seriautoservice.co.za/">
+<title>Seri Auto Service | Keeping you on the road · Hennopspark, Centurion</title>
+<meta name="description" content="Servicing, repairs, diagnostics and performance work on all brands, from everyday cars to supercars. Legacy Park, Hennopspark, Centurion.">
+<meta property="og:title" content="Seri Auto Service | Keeping you on the road">
+<meta property="og:description" content="Servicing, repairs, diagnostics and performance work on all brands. Hennopspark, Centurion.">
+<meta property="og:image" content="https://www.seriautoservice.co.za/amg-front.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#e10600;--red2:#ff2a1f;--ink:#f4f4f5;--mute:#a1a1aa;--bg:#0a0a0b;--bg2:#111113;--card:#16161a;--line:#26262c;--green:#009246}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img,video{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+.disp{font-family:'Barlow Condensed',Inter,sans-serif;text-transform:uppercase;letter-spacing:.01em;line-height:.95}
+svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.tri{height:4px;background:linear-gradient(90deg,var(--green) 0 33.3%,#fff 33.3% 66.6%,var(--red) 66.6%)}
+/* preview bar */
+.pv{background:#fff;color:#111;font-size:13px}
+.pv .wrap{display:flex;gap:10px;align-items:center;justify-content:space-between;min-height:42px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px}
+.pv .cta{background:#111;color:#fff;font-weight:700;padding:6px 14px;border-radius:999px;white-space:nowrap}
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(10,10,11,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:16px}
+header img{height:52px;width:auto}
+nav{display:flex;align-items:center;gap:30px;font-weight:600;font-size:14px;color:#d4d4d8}
+nav a.l:hover{color:#fff}
+@media(max-width:880px){nav a.l{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 24px;border-radius:6px;font-weight:700;font-size:15px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.r{background:var(--red);color:#fff}.btn.r:hover{background:var(--red2)}
+.btn.g{background:#25D366;color:#fff}
+.btn.o{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn.sm{padding:11px 16px;font-size:14px}
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url(amg-front.jpg) center 60%/cover}
+.hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,10,11,.97) 0%,rgba(10,10,11,.85) 50%,rgba(10,10,11,.55) 100%),linear-gradient(0deg,var(--bg) 0%,transparent 30%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.35fr .65fr;gap:56px;align-items:center;padding-top:80px;padding-bottom:90px}
+@media(max-width:940px){.hero .wrap{grid-template-columns:1fr;padding-top:56px;padding-bottom:64px}}
+.tag{display:inline-flex;gap:10px;align-items:center;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#d4d4d8}
+.tag .flag{width:26px;height:16px;border-radius:2px;background:linear-gradient(90deg,var(--green) 0 33.3%,#fff 33.3% 66.6%,var(--red) 66.6%)}
+.hero h1{font-size:clamp(54px,8.4vw,108px);font-weight:800;margin:20px 0 22px}
+.hero h1 em{font-style:italic;color:var(--red)}
+.hero p.lead{font-size:clamp(17px,1.7vw,20px);color:#d4d4d8;max-width:600px;margin-bottom:34px}
+.hero .btns{display:flex;gap:12px;flex-wrap:wrap}
+.proof{display:flex;gap:28px;flex-wrap:wrap;margin-top:40px;color:#e4e4e7;font-size:14px;font-weight:600}
+.proof span{display:flex;align-items:center;gap:8px}.stars{color:#fbbf24;letter-spacing:2px}
+.vcard{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:9/14;border:1px solid rgba(255,255,255,.12);box-shadow:0 40px 80px -30px rgba(0,0,0,.9);background:#000}
+.vcard video{width:100%;height:100%;object-fit:cover}
+.vcard .lbl{position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap;bottom:16px;background:rgba(10,10,11,.75);backdrop-filter:blur(6px);padding:8px 12px;border-radius:8px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.vcard .lbl i{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(225,6,0,.3)}
+@media(max-width:940px){.vcard{max-width:340px;width:100%;aspect-ratio:9/12;margin:0 auto}}
+/* services */
+.svc{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svc .wrap{display:grid;grid-template-columns:repeat(6,1fr)}
+.svc div{padding:30px 14px;text-align:center;border-right:1px solid var(--line)}.svc div:last-child{border:0}
+.svc .ic{width:62px;height:62px;margin:0 auto 14px;border-radius:50%;border:2px solid var(--red);display:grid;place-items:center;color:#fff}
+.svc .ic svg{width:28px;height:28px}
+.svc b{font-family:'Barlow Condensed';font-size:20px;text-transform:uppercase;letter-spacing:.03em;display:block;line-height:1.05}
+.svc small{color:var(--mute);font-size:13px}
+@media(max-width:900px){.svc .wrap{grid-template-columns:repeat(3,1fr)}.svc div:nth-child(3){border-right:0}.svc div:nth-child(-n+3){border-bottom:1px solid var(--line)}}
+@media(max-width:520px){.svc .wrap{grid-template-columns:1fr 1fr}.svc div{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)}.svc div:nth-child(2n){border-right:0!important}}
+section{padding:100px 0}
+.kick{color:var(--red);font-weight:800;font-size:13px;letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.kick:before{content:"";width:28px;height:2px;background:var(--red)}
+h2{font-size:clamp(40px,5.4vw,68px);font-weight:800;margin:14px 0 16px}
+.sub{color:var(--mute);font-size:17px;max-width:620px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+/* brands gallery */
+.gal{display:grid;grid-template-columns:1fr 1.6fr 1.6fr;grid-template-rows:290px 290px;gap:14px}
+.gal div{border-radius:14px;overflow:hidden;position:relative;background:#222}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal div:hover img{transform:scale(1.04)}
+.gal .tall{grid-row:1/3}.gal .wide2{grid-column:2/4}
+.gal span{position:absolute;left:14px;bottom:12px;font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;font-size:18px;letter-spacing:.04em;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.gal .dup{display:none}
+@media(max-width:860px){.galwrap{margin:0 -22px}.gal{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 0 4px 22px}.gal::-webkit-scrollbar{display:none}.gal div,.gal .tall,.gal .wide2,.gal .dup{display:block;flex:0 0 72vw;max-width:320px;aspect-ratio:4/5;margin-right:12px;grid-row:auto;grid-column:auto}.gal span{font-size:22px;left:16px;bottom:14px}}
+/* about */
+.about{background:var(--bg2)}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+@media(max-width:900px){.split{grid-template-columns:1fr;gap:36px}}
+.stack{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stack div{border-radius:14px;overflow:hidden;aspect-ratio:4/3}.stack img{width:100%;height:100%;object-fit:cover}
+.stack .wide{grid-column:1/3;aspect-ratio:16/8}
+.points{display:grid;gap:18px;margin-top:30px}
+.pt{display:flex;gap:16px}.pt .n{width:44px;height:44px;flex:none;border-radius:8px;background:var(--red);display:grid;place-items:center;font-weight:800}
+.pt h4{font-size:17px}.pt p{color:var(--mute);font-size:15px}
+/* reviews */
+.rv{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.review{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px;display:flex;flex-direction:column;gap:18px;position:relative}
+.review:before{content:"“";position:absolute;right:24px;top:6px;font-family:Georgia;font-size:90px;color:var(--red);opacity:.35;line-height:1}
+.review blockquote{font-size:17px;color:#e4e4e7}
+.who{display:flex;align-items:center;gap:12px;margin-top:auto}.av{width:42px;height:42px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-weight:800}
+.who small{display:block;color:var(--mute);font-size:12.5px}
+.gscore{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 22px}
+.gscore b{font-family:'Barlow Condensed';font-size:44px;line-height:1}
+/* find */
+.info{display:grid;gap:12px;margin-top:28px}
+.row{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.row svg.i{color:var(--red);margin-top:2px}.row b{display:block;font-size:15px}.row span{color:var(--mute);font-size:15px}
+.map{position:relative;border-radius:18px;overflow:hidden;min-height:420px;border:1px solid var(--line)}.map .pin{position:absolute;left:50%;top:50%;width:46px;height:58px;transform:translate(-50%,-100%);pointer-events:none;filter:drop-shadow(0 6px 10px rgba(0,0,0,.6))}.map .open{position:absolute;right:14px;bottom:14px;background:var(--red);color:#fff;font-weight:700;font-size:13px;padding:9px 14px;border-radius:6px}.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(1) invert(.92) contrast(.9)}
+.logo-vid{border-radius:14px;overflow:hidden;width:100%;max-width:260px;border:1px solid var(--line);margin:28px auto 0}
+/* cta */
+.cta{position:relative;border-radius:20px;overflow:hidden;padding:70px 56px;background:url(bentleys.jpg) center/cover}
+.cta:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(225,6,0,.94),rgba(120,0,0,.82))}
+.cta>*{position:relative}.cta h2{margin:0 0 10px}.cta p{font-size:18px;opacity:.92}
+.cta .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn.w{background:#fff;color:#111}
+footer{padding:60px 0 30px;margin-top:100px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}@media(max-width:760px){footer .wrap{grid-template-columns:1fr}}
+footer h5{color:#fff;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+footer img{height:56px;margin-bottom:14px}
+.copy{border-top:1px solid var(--line);margin-top:36px;padding-top:20px;grid-column:1/-1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.fab{position:fixed;right:20px;bottom:20px;background:#25D366;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.4);z-index:50}
+.fab svg{width:30px;height:30px;fill:#fff}
+.mbar{display:none}
+@media(max-width:640px){.mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;padding:10px;background:var(--bg);border-top:1px solid var(--line);z-index:50}.fab{display:none}body{padding-bottom:72px}}
+</style>
+</head>
+<body>
+<div class="tri"></div>
+<header><div class="wrap">
+<a href="#"><img src="logo.png" alt="Seri Auto Service"></a>
+<nav><a class="l" href="#services">Services</a><a class="l" href="#workshop">Brands</a><a class="l" href="#reviews">Reviews</a><a class="l" href="#contact">Contact</a>
+<a class="btn r sm" href="tel:0832705494"><svg class="i" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>083 270 5494</a></nav>
+</div></header>
+
+<div class="hero"><div class="bg"></div><div class="wrap">
+<div>
+<span class="tag"><span class="flag"></span>Hennopspark · Centurion</span>
+<h1 class="disp">Keeping you<br>on the <em>road.</em></h1>
+<p class="lead">Servicing, repairs, diagnostics and performance work on every make, from your daily driver to Bentley, Lamborghini and AMG. All brands welcome.</p>
+<div class="btns"><a class="btn r" href="tel:0832705494">Call 083 270 5494</a><a class="btn g" href="https://wa.me/27832705494?text=Hi%20Seri%20Auto%20Service%2C%20I%27d%20like%20to%20book%20my%20car%20in.">WhatsApp to book</a></div>
+<div class="proof"><span><span class="stars">★★★★★</span> 5.0 on Google</span><span>21 reviews</span><span>Legacy Park, Hennopspark</span></div>
+</div>
+<div class="vcard"><video id="hv" src="logo-reveal.mp4" poster="logo-poster.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture disableremoteplayback></video></div>
+</div></div>
+
+<div class="svc" id="services"><div class="wrap">
+<div><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div><b>Servicing &amp; repairs</b><small>All makes and models</small></div>
+<div><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 14l4-4M3.3 17a10 10 0 1 1 17.4 0"/><circle cx="12" cy="14" r="1"/></svg></div><b>Diagnostics</b><small>Find the real fault</small></div>
+<div><div class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M21 12h-3"/></svg></div><b>Brakes</b><small>Pads, discs, calipers</small></div>
+<div><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 2v3M12 19v3M8 5h8M8 19h8M9 8l6 2-6 2 6 2-6 2"/></svg></div><b>Suspension</b><small>Shocks, arms, bushes</small></div>
+<div><div class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><path d="M3.5 10h17M12 14v7"/></svg></div><b>Steering</b><small>Racks, joints, alignment</small></div>
+<div><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><b>Performance</b><small>For those who want more</small></div>
+</div></div>
+
+<section id="workshop"><div class="wrap">
+<div class="head"><div><div class="kick">All brands welcome</div><h2 class="disp">From daily drivers<br>to supercars.</h2><p class="sub">Your car is in good hands, whatever it is. A clean, well-run workshop with the equipment and know-how for every make.</p><div style="margin-top:34px;display:flex;flex-wrap:wrap;gap:10px"><span style="border:1px solid var(--line);background:var(--card);padding:9px 14px;border-radius:999px;font-size:14px;font-weight:600">Paint correction</span><span style="border:1px solid var(--line);background:var(--card);padding:9px 14px;border-radius:999px;font-size:14px;font-weight:600">Tinting</span><span style="border:1px solid var(--line);background:var(--card);padding:9px 14px;border-radius:999px;font-size:14px;font-weight:600">Modifications</span><span style="border:1px solid var(--line);background:var(--card);padding:9px 14px;border-radius:999px;font-size:14px;font-weight:600">Racing brake systems</span><span style="border:1px solid var(--line);background:var(--card);padding:9px 14px;border-radius:999px;font-size:14px;font-weight:600">Exhaust upgrades</span><span style="border:1px solid var(--line);background:var(--card);padding:9px 14px;border-radius:999px;font-size:14px;font-weight:600">Radio upgrades</span><span style="border:1px solid var(--line);background:var(--card);padding:9px 14px;border-radius:999px;font-size:14px;font-weight:600">Dry ice blasting</span></div></div><a class="btn o" href="https://wa.me/27832705494">Ask us about your car →</a></div>
+<div class="galwrap"><div class="gal">
+<div class="tall"><img src="lambo.jpg" alt="Lamborghini in the Seri Auto Service workshop"><span>Lamborghini</span></div>
+<div class="wide2"><img src="bentleys.jpg" alt="Two Bentley Continentals in the workshop" style="object-position:center 55%"><span>Bentley</span></div>
+<div><img src="amg-lift.jpg" alt="Mercedes-AMG GT on the lift"><span>Mercedes-AMG</span></div>
+<div><img src="mat-shafts.jpg" alt="New drive shafts on the Seri Auto Service mat" style="object-position:center 40%"><span>Quality parts</span></div>
+
+<div class="dup tall" aria-hidden="true"><img src="lambo.jpg" alt="Lamborghini in the Seri Auto Service workshop"><span>Lamborghini</span></div>
+<div class="dup wide2" aria-hidden="true"><img src="bentleys.jpg" alt="Two Bentley Continentals in the workshop" style="object-position:center 55%"><span>Bentley</span></div>
+<div class="dup" aria-hidden="true"><img src="amg-lift.jpg" alt="Mercedes-AMG GT on the lift"><span>Mercedes-AMG</span></div>
+<div class="dup" aria-hidden="true"><img src="mat-shafts.jpg" alt="New drive shafts on the Seri Auto Service mat" style="object-position:center 40%"><span>Quality parts</span></div>
+</div></div>
+</div></section>
+
+<section class="about"><div class="wrap split">
+<div class="stack">
+<div class="wide"><img src="lounge.jpg" alt="Customer lounge at Seri Auto Service" loading="lazy"></div>
+<div><img src="reception.jpg" alt="Reception" loading="lazy" style="object-position:30% center"></div>
+<div><img src="mat.jpg" alt="Seri Auto Service logo" loading="lazy"></div>
+</div>
+<div>
+<div class="kick">The Seri way</div><h2 class="disp">Italian passion.<br>Proper workmanship.</h2>
+<p class="sub">Giulio Seri and the team treat every car the way they'd treat their own. Welcome to wait in the lounge while we work.</p>
+<div class="points">
+<div class="pt"><div class="n">01</div><div><h4>Neat, professional work</h4><p>Done properly, in a clean, well-maintained workshop.</p></div></div>
+<div class="pt"><div class="n">02</div><div><h4>Straight answers</h4><p>We explain what your car needs and why, before any work starts.</p></div></div>
+<div class="pt"><div class="n">03</div><div><h4>Every brand, every budget</h4><p>From a routine service to performance upgrades.</p></div></div>
+</div>
+</div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+<div class="head"><div><div class="kick">Reviews</div><h2 class="disp">Don't take our word for it.</h2></div><div class="gscore"><b>5.0</b><div><div class="stars">★★★★★</div><small style="color:var(--mute)">21 reviews on Google</small></div></div></div>
+<div class="rv">
+<figure class="review"><div class="stars">★★★★★</div><blockquote>Excellent service, The workmanship is amazing, everything is done neatly and professionally…</blockquote><div class="who"><div class="av">T</div><div><b>Tristan F.</b><small>Google review</small></div></div></figure>
+<figure class="review"><div class="stars">★★★★★</div><blockquote>I had an excellent experience with my recent car service. From the moment I arrived, the staff were welcoming and professional.</blockquote><div class="who"><div class="av">S</div><div><b>Shane V.</b><small>Google review</small></div></div></figure>
+</div>
+</div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap split" style="align-items:stretch">
+<div><div class="kick">Find us</div><h2 class="disp">Book your car in.</h2>
+<div class="info">
+<div class="row"><svg class="i" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><b>Workshop</b><span>Unit 3, Legacy Park, 69 Jurg Ave, Hennopspark, Centurion, 0172</span></div></div>
+<div class="row"><svg class="i" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><b>Call or WhatsApp</b><span><a href="tel:0832705494">083 270 5494</a></span></div></div>
+<div class="row"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>Trading hours</b><span>Mon – Fri, 08:00 – 17:00</span></div></div>
+<div class="row"><svg class="i" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><div><b>Email</b><span><a href="mailto:giulioseri@rocketmail.com">giulioseri@rocketmail.com</a></span></div></div>
+</div>
+</div>
+<div class="map"><iframe loading="lazy" src="https://maps.google.com/maps?q=Seri%20Auto%20Service%2C%2069%20Jurg%20Ave%2C%20Hennopspark%2C%20Centurion&output=embed" title="Map to Seri Auto Service"></iframe><svg class="pin" viewBox="0 0 46 58"><path d="M23 0C10.3 0 0 10.3 0 23c0 16.5 23 35 23 35s23-18.5 23-35C46 10.3 35.7 0 23 0z" fill="#e10600"/><circle cx="23" cy="22" r="8.5" fill="#fff"/></svg><a class="open" href="https://www.google.com/maps/search/?api=1&amp;query=Seri%20Auto%20Service%2C%2069%20Jurg%20Ave%2C%20Hennopspark%2C%20Centurion" target="_blank" rel="noopener">Open in Google Maps</a></div>
+</div></section>
+
+<div class="wrap"><div class="cta"><h2 class="disp">Keeping you on the road.</h2><p>Book your service, repair or diagnostic today.</p><div class="btns"><a class="btn w" href="tel:0832705494">Call 083 270 5494</a><a class="btn g" href="https://wa.me/27832705494?text=Hi%20Seri%20Auto%20Service%2C%20I%27d%20like%20to%20book%20my%20car%20in.">WhatsApp us</a></div></div></div>
+
+<footer><div class="wrap">
+<div><img src="logo.png" alt="Seri Auto Service"><p>Servicing, repairs, diagnostics and performance work on all brands. Hennopspark, Centurion.</p></div>
+<div><h5>Contact</h5><p>083 270 5494<br>giulioseri@rocketmail.com<br>Mon – Fri, 08:00 – 17:00</p></div>
+<div><h5>Workshop</h5><p>Unit 3, Legacy Park<br>69 Jurg Ave, Hennopspark<br>Centurion, 0172</p></div>
+<div class="copy"><span>© 2026 Seri Auto Service</span><span>Website by <a href="https://www.blackstone-tech.co.za" style="color:#fff">Blackstone Tech</a></span></div>
+</div></footer>
+<a class="fab" href="https://wa.me/27832705494" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm0-21.6A11.8 11.8 0 0 0 1.9 18L.2 24l6.2-1.6A11.8 11.8 0 1 0 12 .2z"/></svg></a>
+<div class="mbar"><a class="btn r" href="tel:0832705494">Call</a><a class="btn g" href="https://wa.me/27832705494">WhatsApp</a></div>
+<script>
+(function(){var g=document.querySelector('.gal');if(!g)return;var mq=window.matchMedia('(max-width:860px)'),paused=false,t,last=0,pos=0;
+function half(){var d=g.querySelector('.dup');return d?d.offsetLeft-g.children[0].offsetLeft:g.scrollWidth/2}
+function step(ts){if(mq.matches&&!paused){var dt=last?Math.min(ts-last,50):16;pos+=dt*0.035;if(pos>=half())pos-=half();g.scrollLeft=pos}last=ts;requestAnimationFrame(step)}
+function hold(){paused=true;clearTimeout(t)}function release(){clearTimeout(t);t=setTimeout(function(){pos=g.scrollLeft;paused=false},1800)}
+g.addEventListener('touchstart',hold,{passive:true});g.addEventListener('touchend',release);g.addEventListener('pointerdown',hold);g.addEventListener('pointerup',release);
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)requestAnimationFrame(step)})();
+</script>
+<script>
+(function(){var v=document.getElementById('hv');if(!v)return;v.muted=true;v.defaultMuted=true;v.setAttribute('muted','');
+function go(){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+go();document.addEventListener('DOMContentLoaded',go);window.addEventListener('load',go);
+['touchstart','scroll','click','keydown'].forEach(function(e){window.addEventListener(e,go,{passive:true,once:true})});
+document.addEventListener('visibilitychange',function(){if(!document.hidden)go()});
+if('IntersectionObserver' in window)new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)go()})}).observe(v);})();
+</script>
+</body>
+</html>
