@@ -1,0 +1,4 @@
+:HL["/act-manufacturing/_next/static/chunks/31e-bb2qd7eto.css","style"]
+:HL["/act-manufacturing/_next/static/media/Inter-s.p.0en9s7309_d_-.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/act-manufacturing/_next/static/media/SpaceGrotesk-s.p.0k1rb03udo3z3.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"actcast-1350","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"_jKmqX_uX4S_Rr3id2HAw"}

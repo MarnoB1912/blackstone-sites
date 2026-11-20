@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">ACT Manufacturing</title>
+  <desc id="desc">Specialised refractory materials for severe industrial conditions.</desc>
+  <rect width="1200" height="630" fill="#0E1113"/>
+  <path d="M0 520h1200v110H0z" fill="#171B1E"/>
+  <path d="M116 110h420v420H116z" fill="#252B2F" stroke="#D7D4CD" stroke-opacity=".28"/>
+  <path d="M156 160h340M156 210h340M156 260h340M156 310h340M156 360h340M156 410h340M156 460h340" stroke="#D7D4CD" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M186 160l-30 50 30 50-30 50 30 50-30 50 30 50M276 160l-30 50 30 50-30 50 30 50-30 50 30 50M366 160l-30 50 30 50-30 50 30 50-30 50 30 50M456 160l-30 50 30 50-30 50 30 50-30 50 30 50" stroke="#C65D2E" stroke-opacity=".55" stroke-width="3" fill="none"/>
+  <rect x="604" y="112" width="78" height="8" fill="#C65D2E"/>
+  <text x="604" y="178" fill="#FAF9F5" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" letter-spacing="0">ACT Manufacturing</text>
+  <text x="604" y="252" fill="#FAF9F5" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="0">Specialised refractory materials</text>
+  <text x="604" y="314" fill="#D7D4CD" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" letter-spacing="0">Engineered for severe abrasion, thermal</text>
+  <text x="604" y="356" fill="#D7D4CD" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" letter-spacing="0">and chemical environments.</text>
+  <text x="604" y="466" fill="#C65D2E" font-family="Consolas, monospace" font-size="24" font-weight="700" letter-spacing="2">SASOLBURG, SOUTH AFRICA  |  SINCE 1989</text>
+</svg>
